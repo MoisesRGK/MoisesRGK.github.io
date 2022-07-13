@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed:ital@1&display=swap');
+
+body{
+    background: #0f4c5c;
+    font-family: 'PT Serif', serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+section{
+    background-color:#0f4c5c;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 8px;
+    border-style:dashed;
+    border-color: aliceblue;
+}
+
+.entrada {
+    background-color: #033f53;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 3px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: azure;
+}
+
+.botom {
+    background-color: #044f68;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 3px;
+    font-family: 'PT Serif', serif;
+    color:aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.botoms {
+    text-align: center;
+}
+
+.entradas {
+    text-align: center;
+}
+
+.titulo {
+    color: aliceblue;
+}
