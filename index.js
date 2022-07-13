@@ -40,15 +40,13 @@ function aleatorio(){
   document.getElementById("c3-numeros").innerHTML = tabela;
 };
 
-function MegaCena () {
+function MegaSena () {
   let max = document.getElementById("c4-numero").value;
   let list = [];
 
   for(let n = 0; n < max; n++){
-    list[n] = [];
-    for (let i = 0; i < 6; i++) {
-      list[n][i] = Math.floor(Math.random() * (60 - 1) + 1);
-    };  
-  };
+    list.push("jogos" + i)
+   
 document.getElementById("c4-resposta").innerHTML = list;
+  };
 };
