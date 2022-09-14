@@ -40,13 +40,26 @@ function aleatorio(){
   document.getElementById("c3-numeros").innerHTML = tabela;
 };
 
-function MegaSena () {
+function MegaCena () {
+  function ordenaCrescente(a, b){
+    return a - b;
+  }
   let max = document.getElementById("c4-numero").value;
-  let list = [];
-
-  for(let n = 0; n < max; n++){
-    list.push("jogos" + i)
-   
-document.getElementById("c4-resposta").innerHTML = list;
+  let jogos = [];
+  for(let nJogos = 0; nJogos < max; nJogos++) {
+    jogos[nJogos] = [];
+    for (let numeros = 0; numeros < 6; numeros++) {
+      let aleatorio = Math.floor(Math.random() * (60 - 1) + 1);
+      while (true) {
+        if (jogos[nJogos].includes(aleatorio)) {
+          aleatorio = Math.floor(Math.random() * (60 - 1) + 1);
+        } else {
+          jogos[nJogos][numeros] = aleatorio;
+          break;
+        };
+      };
+    };
+    jogos[nJogos].sort(ordenaCrescente);
   };
+document.getElementById("c4-resposta").innerHTML = jogos;
 };
